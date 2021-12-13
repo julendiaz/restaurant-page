@@ -1,8 +1,7 @@
-import _ from "lodash";
 
-const content = document.querySelector("#content");
+export const home = () => {
 
-function home() {
+    const superContainer = document.createElement("div");
 
     //----------------NAVBAR-------------------//
     const navbar = document.createElement("div");
@@ -127,4 +126,11 @@ function home() {
     number.innerHTML = "+34 659  771 594";
     poweredBy.innerHTML = "Powered by The Odin Project";
     developedBy.innerHTML = "Developed by Julen Diaz";
+
+    footer.appendChild(footerNav, number, poweredBy, developedBy);
+
+    //--------------------FINAL APPEND------------------//
+    superContainer.appendChild(navbar, mainContent, footer);
+
+    return superContainer;
 }
