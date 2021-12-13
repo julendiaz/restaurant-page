@@ -24,6 +24,12 @@ function home() {
     linkHome.innerHTML = "Home";
     linkMenu.innerHTML = "Menu";
     linkChef.innerHTML = "Chef";
+
+    // Add links 
+    linkHome.href = "#";
+    linkMenu.href = "#";
+    linkChef.href = "#";
+
     // append elements
     navLeft.appendChild(navLeft__links);
     navLeft__links.appendChild(linkHome_Container, linkMenu_Container, linkChef_Container);
@@ -50,6 +56,10 @@ function home() {
     linkReservations.innerHTML = "Reservations";
     linkLocation.innerHTML = "Location";
 
+      // Add links 
+      linkReservations.href = "#";
+      linkLocation.href = "#";
+
     // append elements
     navRight.appendChild(navRight__links);
     navRight__links.appendChild(linkReservations_Container, linkLocation_Container);
@@ -73,6 +83,48 @@ function home() {
 
     mainContent.appendChild(locationTitle, ramenImg, scheduleTitle);
 
+    //------------------------FOOTER--------------------------//
+    const footer = document.createElement("footer");
 
+    // Footer Navbar
 
+    const footerNav = document.createElement("nav");
+    const footer__links = document.createElement("ul");
+    const footer__links__home = document.createElement("li");
+    const footer__home = document.createElement("a");
+    const footer__links__chef = document.createElement("li");
+    const footer__chef = document.createElement("a");
+    const footer__links__reservations = document.createElement("li");
+    const footer__reservations= document.createElement("a");
+    const footer__links__location = document.createElement("li");
+    const footer__location = document.createElement("a");
+
+    footerNav.id = "footer__nav"; 
+    footer__home.innerHTML = "Home";
+    footer__chef.innerHTML = "Chef";
+    footer__reservations.innerHTML = "Reservations";
+    footer__location.innerHTML = "Location";
+
+      // Add links 
+      footer__home.href = "#";
+      footer__chef.href = "#";
+      footer__reservations.href = "#";
+      footer__location.href = "#";
+     
+
+    footerNav.appendChild(footer__links);
+    footer__links.appendChild(footer__links__home, footer__links__chef, footer__links__reservations, footer__links__location);
+    footer__links__home.appendChild(footer__home);
+    footer__links__chef.appendChild(footer__chef);
+    footer__links__reservations.appendChild(footer__reservations);
+    footer__links__location.appendChild(footer__location);
+
+    // Final details
+    const number = document.createElement("h3");
+    const poweredBy = document.createElement("h5");
+    const developedBy = document.createElement("h5");
+
+    number.innerHTML = "+34 659  771 594";
+    poweredBy.innerHTML = "Powered by The Odin Project";
+    developedBy.innerHTML = "Developed by Julen Diaz";
 }
