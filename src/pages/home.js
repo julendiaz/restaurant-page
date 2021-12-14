@@ -1,3 +1,4 @@
+import '../style.css';
 
 export const home = () => {
 
@@ -21,9 +22,9 @@ export const home = () => {
     // add Classes
     navLeft.classList.add("nav__links"); 
     navLeft.id = "nav__left"; 
-    linkHome.innerHTML = "Home";
-    linkMenu.innerHTML = "Menu";
-    linkChef.innerHTML = "Chef";
+    linkHome.innerHTML = "HOME";
+    linkMenu.innerHTML = "MENU";
+    linkChef.innerHTML = "CHEF";
 
     // Add links 
     linkHome.href = "#";
@@ -53,8 +54,8 @@ export const home = () => {
     // add Classes
     navRight.classList.add("nav__links"); 
     navRight.id = "nav__right"; 
-    linkReservations.innerHTML = "Reservations";
-    linkLocation.innerHTML = "Location";
+    linkReservations.innerHTML = "RESERVATIONS";
+    linkLocation.innerHTML = "LOCATION";
 
       // Add links 
       linkReservations.href = "#";
