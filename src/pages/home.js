@@ -2,6 +2,7 @@
 export const home = () => {
 
     const superContainer = document.createElement("div");
+    superContainer.classList.add("main-container");
 
     //----------------NAVBAR-------------------//
     const navbar = document.createElement("div");
@@ -30,11 +31,11 @@ export const home = () => {
     linkChef.href = "#";
 
     // append elements
-    navLeft.appendChild(navLeft__links);
-    navLeft__links.appendChild(linkHome_Container, linkMenu_Container, linkChef_Container);
-    linkHome_Container.appendChild(linkHome);
-    linkMenu_Container.appendChild(linkMenu);
-    linkChef_Container.appendChild(linkChef);
+    navLeft.append(navLeft__links);
+    navLeft__links.append(linkHome_Container, linkMenu_Container, linkChef_Container);
+    linkHome_Container.append(linkHome);
+    linkMenu_Container.append(linkMenu);
+    linkChef_Container.append(linkChef);
 
     // Logo
     const logo = document.createElement("img");
@@ -60,13 +61,13 @@ export const home = () => {
       linkLocation.href = "#";
 
     // append elements
-    navRight.appendChild(navRight__links);
-    navRight__links.appendChild(linkReservations_Container, linkLocation_Container);
-    linkReservations_Container.appendChild(linkReservations);
-    linkLocation_Container.appendChild(linkLocation);
+    navRight.append(navRight__links);
+    navRight__links.append(linkReservations_Container, linkLocation_Container);
+    linkReservations_Container.append(linkReservations);
+    linkLocation_Container.append(linkLocation);
 
     // Append the big elements to the Navbar
-    navbar.appendChild(navLeft, logo, navRight);
+    navbar.append(navLeft, logo, navRight);
 
     //-----------MAIN CONTENT-------------------// 
     const mainContent = document.createElement("div");
@@ -80,7 +81,7 @@ export const home = () => {
     ramenImg.alt = "Ramen Image";
     scheduleTitle.innerHTML = "12:00 to 0:00<br /> Every day";
 
-    mainContent.appendChild(locationTitle, ramenImg, scheduleTitle);
+    mainContent.append(locationTitle, ramenImg, scheduleTitle);
 
     //------------------------FOOTER--------------------------//
     const footer = document.createElement("footer");
@@ -111,12 +112,12 @@ export const home = () => {
       footer__location.href = "#";
      
 
-    footerNav.appendChild(footer__links);
-    footer__links.appendChild(footer__links__home, footer__links__chef, footer__links__reservations, footer__links__location);
-    footer__links__home.appendChild(footer__home);
-    footer__links__chef.appendChild(footer__chef);
-    footer__links__reservations.appendChild(footer__reservations);
-    footer__links__location.appendChild(footer__location);
+    footerNav.append(footer__links);
+    footer__links.append(footer__links__home, footer__links__chef, footer__links__reservations, footer__links__location);
+    footer__links__home.append(footer__home);
+    footer__links__chef.append(footer__chef);
+    footer__links__reservations.append(footer__reservations);
+    footer__links__location.append(footer__location);
 
     // Final details
     const number = document.createElement("h3");
@@ -127,10 +128,10 @@ export const home = () => {
     poweredBy.innerHTML = "Powered by The Odin Project";
     developedBy.innerHTML = "Developed by Julen Diaz";
 
-    footer.appendChild(footerNav, number, poweredBy, developedBy);
+    footer.append(footerNav, number, poweredBy, developedBy);
 
     //--------------------FINAL APPEND------------------//
-    superContainer.appendChild(navbar, mainContent, footer);
+    superContainer.append(navbar, mainContent, footer);
 
     return superContainer;
 }
