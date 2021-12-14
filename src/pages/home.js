@@ -101,10 +101,10 @@ export const home = () => {
     const footer__location = document.createElement("a");
 
     footerNav.id = "footer__nav"; 
-    footer__home.innerHTML = "Home";
-    footer__chef.innerHTML = "Chef";
-    footer__reservations.innerHTML = "Reservations";
-    footer__location.innerHTML = "Location";
+    footer__home.innerHTML = "HOME";
+    footer__chef.innerHTML = "CHEF";
+    footer__reservations.innerHTML = "RESERVATIONS";
+    footer__location.innerHTML = "LOCATION";
 
       // Add links 
       footer__home.href = "#";
@@ -123,13 +123,17 @@ export const home = () => {
     // Final details
     const number = document.createElement("h3");
     const poweredBy = document.createElement("h5");
+    const inspiredBy = document.createElement("h5");
     const developedBy = document.createElement("h5");
 
     number.innerHTML = "+34 659  771 594";
-    poweredBy.innerHTML = "Powered by The Odin Project";
+    poweredBy.innerHTML = "Powered by <a href='https://www.theodinproject.com/'>The Odin Project</a>";
+    inspiredBy.innerHTML = "Inspired by <a href='https://motto-demo.squarespace.com/'>Chotto Motto</a>";
     developedBy.innerHTML = "Developed by Julen Diaz";
 
-    footer.append(footerNav, number, poweredBy, developedBy);
+    developedBy.id = "developedBy";
+
+    footer.append(footerNav, number, poweredBy, inspiredBy, developedBy);
 
     //--------------------FINAL APPEND------------------//
     superContainer.append(navbar, mainContent, footer);
