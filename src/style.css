@@ -279,6 +279,15 @@ footer h5 a:hover {
 
 /* ----------MENU ITEMS----------- */
 
+.menu__title {
+  width: 7em;
+  text-align: left;
+  margin-top: 2em;
+}
+
+#small-plates {
+  margin-top: -0.5em;
+}
 .item__container {
   display: flex;
   flex-wrap: wrap;
