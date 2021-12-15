@@ -15,5 +15,7 @@ export const HomeContent = () => {
 
     mainContent.append(locationTitle, ramenImg, scheduleTitle);
 
+    mainContent.style.marginTop = "0";
+
     return mainContent;
 }

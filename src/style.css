@@ -277,6 +277,35 @@ footer h5 a:hover {
   color: rgb(180, 180, 180);
 }
 
+/* ----------MENU ITEMS----------- */
+
+.item__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30em;
+  margin-top: 2.3em;
+}
+
+.item__title {
+  width: 18em;
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.item__price {
+  width: 4em;
+  text-align: right;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.item__description {
+  margin-top: 0.5em;
+  font-weight: 200;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+}
 /* ----------COMMON STYLES------------ */
 
 .hide {

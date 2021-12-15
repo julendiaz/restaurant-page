@@ -1,8 +1,10 @@
 import '../style.css';
 
-export const MenuItem = (title, description) => {
+export const MenuItem = (title, price, description) => {
 
     const itemContainer = document.createElement("div");
+
+    itemContainer.classList.add("item__container");
 
     const itemTitle = document.createElement("h3");
 
@@ -16,7 +18,13 @@ export const MenuItem = (title, description) => {
 
     itemDescription.innerHTML = description; 
 
-    itemContainer.append(itemTitle, itemDescription);
+    const itemPrice = document.createElement("h4");
+
+    itemPrice.classList.add("item__price");
+
+    itemPrice.innerHTML = price;
+
+    itemContainer.append(itemTitle, itemPrice, itemDescription);
 
     return itemContainer;
 }
