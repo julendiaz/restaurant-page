@@ -1,8 +1,30 @@
-import './style.css';
 import { home } from "./pages/home";
+import { Menu } from './pages/menu';
+import { HomeContent } from "./pages/HomeContent";
+import './style.css';
 
-const content = document.querySelector("#content"); 
+const content = document.querySelector("#content");
 
 content.appendChild(home());
 
-console.log("hey this is real shit");
+const mainContent = document.querySelector("#main-content");
+const homeBtn = document.querySelector("#homeBtn");
+const menuBtn = document.querySelector("#menuBtn");
+
+const removeMainContent = () => {
+    while(mainContent.firstChild) {
+        mainContent.firstChild.remove();
+    }
+}
+
+menuBtn.addEventListener("click", function() {
+    removeMainContent();
+
+    mainContent.appendChild(Menu());
+})
+
+homeBtn.addEventListener("click", function() {
+    removeMainContent();
+
+    mainContent.appendChild(HomeContent());
+})

@@ -1,4 +1,5 @@
 import '../style.css';
+import { Menu } from './menu';
 
 export const home = () => {
 
@@ -14,11 +15,11 @@ export const home = () => {
     const navLeft = document.createElement("nav");
     const navLeft__links = document.createElement("ul");
     const linkHome_Container = document.createElement("li");
-    const linkHome = document.createElement("a");
+    const linkHome = document.createElement("button");
     const linkMenu_Container = document.createElement("li");
-    const linkMenu = document.createElement("a");
+    const linkMenu = document.createElement("button");
     const linkChef_Container = document.createElement("li");
-    const linkChef= document.createElement("a");
+    const linkChef= document.createElement("button");
     // add Classes
     navLeft.classList.add("nav__links"); 
     navLeft.id = "nav__left"; 
@@ -26,10 +27,10 @@ export const home = () => {
     linkMenu.innerHTML = "MENU";
     linkChef.innerHTML = "CHEF";
 
-    // Add links 
-    linkHome.href = "#";
-    linkMenu.href = "#";
-    linkChef.href = "#";
+    // Add Button ID
+    linkHome.id = "homeBtn";
+    linkMenu.id = "menuBtn";
+    linkChef.id = "chefBtn";
 
     // append elements
     navLeft.append(navLeft__links);
@@ -47,9 +48,9 @@ export const home = () => {
     const navRight = document.createElement("nav");
     const navRight__links = document.createElement("ul");
     const linkReservations_Container = document.createElement("li");
-    const linkReservations = document.createElement("a");
+    const linkReservations = document.createElement("button");
     const linkLocation_Container = document.createElement("li");
-    const linkLocation = document.createElement("a");
+    const linkLocation = document.createElement("button");
     
     // add Classes
     navRight.classList.add("nav__links"); 
@@ -57,9 +58,7 @@ export const home = () => {
     linkReservations.innerHTML = "RESERVATIONS";
     linkLocation.innerHTML = "LOCATION";
 
-      // Add links 
-      linkReservations.href = "#";
-      linkLocation.href = "#";
+      // Add links
 
     // append elements
     navRight.append(navRight__links);
@@ -92,25 +91,19 @@ export const home = () => {
     const footerNav = document.createElement("nav");
     const footer__links = document.createElement("ul");
     const footer__links__home = document.createElement("li");
-    const footer__home = document.createElement("a");
+    const footer__home = document.createElement("button");
     const footer__links__chef = document.createElement("li");
-    const footer__chef = document.createElement("a");
+    const footer__chef = document.createElement("button");
     const footer__links__reservations = document.createElement("li");
-    const footer__reservations= document.createElement("a");
+    const footer__reservations= document.createElement("button");
     const footer__links__location = document.createElement("li");
-    const footer__location = document.createElement("a");
+    const footer__location = document.createElement("button");
 
     footerNav.id = "footer__nav"; 
     footer__home.innerHTML = "HOME";
     footer__chef.innerHTML = "CHEF";
     footer__reservations.innerHTML = "RESERVATIONS";
     footer__location.innerHTML = "LOCATION";
-
-      // Add links 
-      footer__home.href = "#";
-      footer__chef.href = "#";
-      footer__reservations.href = "#";
-      footer__location.href = "#";
      
 
     footerNav.append(footer__links);
@@ -137,6 +130,14 @@ export const home = () => {
 
     //--------------------FINAL APPEND------------------//
     superContainer.append(navbar, mainContent, footer);
+
+    //------------------PAGE-CHANGE----------------// 
+
+    //  linkM.addEventListener("click", function () {
+    //    superContainer.classList.add("hide");
+    //    // content.appendChild(Menu());
+    //    console.log("Hole ke ase");
+    //  })
 
     return superContainer;
 }
