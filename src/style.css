@@ -205,7 +205,7 @@ body {
   margin-top: 7em;
 }
 
-#main-content img {
+#ramen__image {
   width: 38em;
 }
 
@@ -319,6 +319,19 @@ footer h5 a:hover {
 
 /* -----------CHEF DESCRIPTION----------- */
 
+.chef-container {
+  margin-top: -5em;
+}
+
+.chef-container h2 {
+  width: 60%;
+  margin: 1em auto;
+  font-size: 2.4em;
+  font-weight: 600;
+  text-align: left;
+  line-height: 2;
+}
+
 .paragraph__container {
   display: flex;
   width: 90%;
@@ -326,6 +339,15 @@ footer h5 a:hover {
   margin: 0 auto;
 }
 
+.chef__image {
+  width: 90%;
+  margin: 3.3em auto;
+}
+
+#chef__ramen {
+  width: 20em;
+  margin-top: 6em;
+}
 .chef__heading {
   display: flex;
   flex-direction: column;

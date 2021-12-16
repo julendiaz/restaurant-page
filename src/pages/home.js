@@ -79,6 +79,7 @@ export const home = () => {
     locationTitle.innerHTML = "Eberhardstrasse 47<br> Stuttgart";
     ramenImg.src = "/src/assets/kaido-ramen.jpeg";
     ramenImg.alt = "Ramen Image";
+    ramenImg.id = "ramen__image";
     scheduleTitle.innerHTML = "12:00 to 0:00<br /> Every day";
 
     mainContent.append(locationTitle, ramenImg, scheduleTitle);

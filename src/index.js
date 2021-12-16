@@ -36,6 +36,7 @@ homeBtn.addEventListener("click", function() {
 chefBtn.addEventListener("click", function() {
     removeMainContent();
 
+    mainContent.style.height = "280em";
     mainContent.appendChild(chef());
 })
 
