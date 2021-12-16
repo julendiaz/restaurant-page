@@ -21,10 +21,12 @@ menuBtn.addEventListener("click", function() {
     removeMainContent();
 
     mainContent.appendChild(Menu());
+    mainContent.style.height = "120em";
 })
 
 homeBtn.addEventListener("click", function() {
     removeMainContent();
 
     mainContent.appendChild(HomeContent());
+    mainContent.style.height = "75em";
 })
