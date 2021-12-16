@@ -1,5 +1,6 @@
 import { home } from "./pages/home";
 import { Menu } from './pages/menu';
+import { chef } from "./pages/chef";
 import { HomeContent } from "./pages/HomeContent";
 import './style.css';
 
@@ -10,6 +11,7 @@ content.appendChild(home());
 const mainContent = document.querySelector("#main-content");
 const homeBtn = document.querySelector("#homeBtn");
 const menuBtn = document.querySelector("#menuBtn");
+const chefBtn = document.querySelector("#chefBtn");
 
 const removeMainContent = () => {
     while(mainContent.firstChild) {
@@ -30,3 +32,11 @@ homeBtn.addEventListener("click", function() {
     mainContent.appendChild(HomeContent());
     mainContent.style.height = "75em";
 })
+
+chefBtn.addEventListener("click", function() {
+    removeMainContent();
+
+    mainContent.appendChild(chef());
+})
+
+

@@ -316,6 +316,41 @@ footer h5 a:hover {
   letter-spacing: 0.05em;
   text-align: left;
 }
+
+/* -----------CHEF DESCRIPTION----------- */
+
+.paragraph__container {
+  display: flex;
+  width: 90%;
+  height: 28em;
+  margin: 0 auto;
+}
+
+.chef__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14em;
+  width: 48%;
+}
+
+.chef__title {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.chef__heading h5 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 1em;
+}
+.chef__description {
+  width: 50%;
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 2.4;
+}
+
 /* ----------COMMON STYLES------------ */
 
 .hide {
