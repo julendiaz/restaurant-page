@@ -58,6 +58,8 @@ export const home = () => {
     linkReservations.innerHTML = "RESERVATIONS";
     linkLocation.innerHTML = "LOCATION";
 
+    linkReservations.id = "reservationsBtn";
+    linkLocation.id = "locationBtn";
       // Add links
 
     // append elements

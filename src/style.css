@@ -203,6 +203,16 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 7em;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #ramen__image {
@@ -279,6 +289,10 @@ footer h5 a:hover {
 
 /* ----------MENU ITEMS----------- */
 
+.menu__container {
+  animation: fadein 2s;
+}
+
 .menu__title {
   width: 7em;
   text-align: left;
@@ -321,6 +335,7 @@ footer h5 a:hover {
 
 .chef-container {
   margin-top: -5em;
+  animation: fadein 2s;
 }
 
 .chef-container h2 {
@@ -371,6 +386,17 @@ footer h5 a:hover {
   text-align: justify;
   font-size: 1.2em;
   line-height: 2.4;
+}
+
+/* ------------RESERVATION-------------- */
+
+.reservations-text {
+  width: 23em;
+  height: auto;
+  font-size: 1.3em;
+  line-height: 2.2;
+  text-align: justify;
+  margin-top: 6em;
 }
 
 /* ----------COMMON STYLES------------ */

@@ -2,6 +2,7 @@ import { home } from "./pages/home";
 import { Menu } from './pages/menu';
 import { chef } from "./pages/chef";
 import { HomeContent } from "./pages/HomeContent";
+import { Reservations } from "./pages/reservations";
 import './style.css';
 
 const content = document.querySelector("#content");
@@ -12,6 +13,8 @@ const mainContent = document.querySelector("#main-content");
 const homeBtn = document.querySelector("#homeBtn");
 const menuBtn = document.querySelector("#menuBtn");
 const chefBtn = document.querySelector("#chefBtn");
+const reservationsBtn = document.querySelector("#reservationsBtn");
+const locationBtn = document.querySelector("#locationBtn");
 
 const removeMainContent = () => {
     while(mainContent.firstChild) {
@@ -40,4 +43,10 @@ chefBtn.addEventListener("click", function() {
     mainContent.appendChild(chef());
 })
 
+reservationsBtn.addEventListener("click", function() {
+    removeMainContent();
+
+    mainContent.style.height = "25em";
+    mainContent.appendChild(Reservations());
+})
 

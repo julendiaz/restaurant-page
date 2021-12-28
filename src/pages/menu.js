@@ -4,6 +4,7 @@ import { MenuItem } from './MenuItem';
 export const Menu = () => {
 
     const menuContainer = document.createElement("div");
+    menuContainer.classList.add("menu__container");
     
     const smallPlates = document.createElement("h1");
     smallPlates.classList.add("menu__title");
